@@ -15,10 +15,10 @@ export default function Home() {
         <div className="flex flex-1  justify-center">
           <Image
             src={myportfolio}
-            className="w-[500px] h-[400px] sm: w-[500px] h-[400px] mr-4"
+            className="w-[500px] h-[400px] sm: w-[700px] h-[500px] "
           ></Image>
         </div>
-        <div className="flex flex-1 justify-center items-center  ">
+        <div className="flex flex-1 justify-center items-center sm:mr-5 ">
           <div className="text-white text-[40px] text-center ">
             <h1>Hello! I'm</h1>
             <h1 className="text-blue-primary"> Axon Gabriel B. Matalubos</h1>
