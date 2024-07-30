@@ -8,16 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-    colors:{
-      blue:{
-        primary: '#50E0FF',
-        secondary:'#5AC7F6',
-        mywhite:'#FFFFFF',
-        background:'#103855',
-      }
-    }
+      colors: {
+        blue: {
+          primary: '#50E0FF',
+          secondary: '#5AC7F6',
+          mywhite: '#FFFFFF',
+          background: '#103855',
+          dark: '#0D2D44',
+        },
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
