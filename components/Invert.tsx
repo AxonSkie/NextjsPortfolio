@@ -19,7 +19,7 @@ function Invert() {
       </div>
       <div className="flex-1  flex items-center justify-center">
         {" "}
-        <Image src={Upload} className="w-[500px] sm:w-[800px]" />
+        <Image src={Upload} className="w-[500px] sm:w-[800px]" alt="random" />
       </div>
     </div>
   );

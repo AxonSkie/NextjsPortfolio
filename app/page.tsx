@@ -24,11 +24,12 @@ export default function Home() {
           <Image
             src={myportfolio}
             className="w-[600px] h-[350px] sm:w-[700px] sm:h-[600px] md:w-[600px] md:h-[400px] lg:w-[1000px] lg:h-[500px]"
+            alt="random"
           ></Image>
         </div>
         <div className="flex flex-1 justify-center items-center sm:mr-5 ">
           <div className="text-white text-[40px] text-center ">
-            <h1 className="text-[30px] sm:text-[50px]">Hello! I'm</h1>
+            <h1 className="text-[30px] sm:text-[50px]">Hello! Im</h1>
             <h1 className="text-blue-primary  text-[30px] sm:text-[50px]">
               Axon Gabriel B. Matalubos
             </h1>
@@ -80,7 +81,11 @@ export default function Home() {
           <div className="flex-1  flex  flex-col sm:flex-row">
             <div className="flex-1  flex items-center justify-center">
               {" "}
-              <Image src={LaSalle} className="w-[500px] sm:w-[800px]" />
+              <Image
+                src={LaSalle}
+                className="w-[500px] sm:w-[800px]"
+                alt="La Salle Image"
+              />
             </div>
             <div className="flex-1 flex flex-col justify-center ">
               <h1 className="text-white text-[20px] sm:text-[50px]">
@@ -98,7 +103,7 @@ export default function Home() {
             <div className="flex-1  flex  flex-col sm:flex-row">
               <div className="flex-1  flex items-center justify-center">
                 {" "}
-                <Image src={Upload} className="w-[500px] " />
+                <Image src={Upload} className="w-[500px] " alt="Upload Image" />
               </div>
               <div className="flex-1 flex flex-col justify-center sm:hidden">
                 <h1 className="text-white text-[20px] mt-4">
@@ -119,7 +124,11 @@ export default function Home() {
             <div className="flex-1  flex  flex-col sm:flex-row ">
               <div className="flex-1  flex items-center justify-center">
                 {" "}
-                <Image src={LaSalle} className="w-[500px] sm:w-[800px]" />
+                <Image
+                  src={LaSalle}
+                  className="w-[500px] sm:w-[800px]"
+                  alt="La Salle Gif"
+                />
               </div>
               <div className="flex-1 flex flex-col justify-center ">
                 <h1 className="text-white text-[20px] sm:text-[50px]">

@@ -12,7 +12,11 @@ const Navbar = () => {
       <div className="flex-1 flex justify-center items-center  sm:justify-start items-start ">
         <div>
           <Link href="http://localhost:3000">
-            <Image src={logo} className="w-[100px] sm:ml-5"></Image>
+            <Image
+              src={logo}
+              className="w-[100px] sm:ml-5"
+              alt="random"
+            ></Image>
           </Link>
         </div>
       </div>

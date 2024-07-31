@@ -32,14 +32,14 @@ function MasteryContent() {
         </div>
         <ul className="m-[20px] ">
           <li className="inline-block m-[20px] text-center text-[15px] ">
-            <Image src={instagram}></Image> Instagram
+            <Image src={instagram} alt="random"></Image> Instagram
           </li>
           <li className="inline-block m-[20px] text-center text-[15px]">
             {" "}
-            <Image src={facebook}></Image>Facebook
+            <Image src={facebook} alt="random"></Image>Facebook
           </li>
           <li className="inline-block m-[20px] text-center text-[15px]">
-            <Image src={github}></Image>
+            <Image src={github} alt="random"></Image>
             <Link href="https://github.com/AxonSkie?tab=repositories    ">
               Github
             </Link>

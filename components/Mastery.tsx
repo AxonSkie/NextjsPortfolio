@@ -5,7 +5,7 @@ import borderers from "../public/images/borderers.png";
 function Mastery() {
   return (
     <div>
-      <Image src={borderers} className="w-full sm:hidden"></Image>
+      <Image src={borderers} className="w-full sm:hidden" alt="random"></Image>
     </div>
   );
 }
