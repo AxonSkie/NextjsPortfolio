@@ -1,13 +1,16 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Swipeablee from "@/components/Swipeablee";
+import { motion } from "framer-motion";
+import BasicFramerMotion from "@/components/BasicFramerMotion";
+import Popup from "@/components/popup";
 
-function about() {
+function Artpage() {
   return (
     <div>
-      <Swipeablee />
+      <Popup />
     </div>
   );
 }
 
-export default about;
+export default Artpage;

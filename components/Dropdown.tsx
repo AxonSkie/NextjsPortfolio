@@ -17,7 +17,7 @@ const Dropdown = () => {
         {isOpen ? "Close Menu" : "Open Menu"}
       </button>
       {isOpen && (
-        <div className="absolute mt-2 bg-white border rounded shadow-lg w-48 right-6">
+        <div className="absolute mt-2 bg-white border rounded shadow-lg w-48 right-6 z-20">
           <ul>
             <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
               Option 1

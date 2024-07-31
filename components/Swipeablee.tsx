@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useSwipeable } from "react-swipeable";
+import { motion } from "framer-motion";
 
 const images = [
   "/arts/arlecchino.jpg",
@@ -27,11 +28,18 @@ function Swipeablee() {
   };
 
   return (
-    <div
+    <motion.div
       {...handlers}
-      className="relative w-full max-w-lg mx-auto overflow-hidden"
+      className="relative w-full max-w-lg mx-auto overflow-hidden z-0"
     >
-      <img
+      <motion.img
+        key={currentIndex} // This will force re-render when index changes
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 0.5, // Adjust as needed
+          ease: "easeInOut", // Use an easing function
+        }}
         src={images[currentIndex]}
         alt={`Image ${currentIndex + 1}`}
         className="w-full h-auto"
@@ -48,7 +56,7 @@ function Swipeablee() {
       >
         &gt;
       </button>
-    </div>
+    </motion.div>
   );
 }
 
