@@ -20,6 +20,10 @@ const config: Config = {
           darker:'#001350'
         },
       },
+      fontFamily: {
+        advent: ['"Advent Pro"', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],

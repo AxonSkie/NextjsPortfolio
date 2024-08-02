@@ -8,38 +8,52 @@ import Link from "next/link";
 function MasteryContent() {
   return (
     <div className="bg-black w-full min-h-[600px] mt-5 text-white flex  justify-center flex-col ">
-      <div className=" flex-1 flex sm:justify-center sm:text-[30px] sm:betwee">
+      <div className=" flex-2 flex sm:justify-center flex-col sm:text-[30px] sm:betwee">
         <ul className="m-[20px] text-center">
-          <h1 className="hidden sm:block sm:text-[50px] ">Mastery</h1>
-          <li className="inline-block m-[20px] ">PHP</li>
-          <li className="inline-block m-[20px]">Reactjs</li>
-          <li className="inline-block m-[20px]">Nextjs</li>
-          <li className="inline-block m-[20px]">tailwind</li>
-          <li className="inline-block m-[20px]">css</li>
-          <li className="inline-block m-[20px]">c++</li>
-          <li className="inline-block m-[20px]">MySql</li>
-          <li className="inline-block m-[20px]">Krita</li>
+          <h1 className="hidden font-roboto sm:block sm:text-[50px] ">
+            Mastery
+          </h1>
+          <li className="inline-block m-[20px] font-advent">PHP</li>
+          <li className="inline-block m-[20px] font-advent">Reactjs</li>
+          <li className="inline-block m-[20px] font-advent">Nextjs</li>
+          <li className="inline-block m-[20px] font-advent">tailwind</li>
+          <li className="inline-block m-[20px] font-advent">css</li>
+          <li className="inline-block m-[20px] font-advent">c++</li>
+          <li className="inline-block m-[20px] font-advent">MySql</li>
+          <li className="inline-block m-[20px] font-advent">Krita</li>
+          <li className="inline-block m-[20px] font-advent">Photoshop</li>
+
+          <li className="inline-block m-[20px] font-advent">Figma</li>
+        </ul>
+        <ul className=" text-center">
+          <li className="inline-block m-[20px] font-advent">Typescript</li>
+          <li className="inline-block m-[20px] font-advent">Javascript</li>
+
+          <li className="inline-block m-[20px] font-advent">Figma</li>
         </ul>
       </div>
       <div className=" flex-2 flex items-center justify-center flex-col sm:justify-center sm:text-[30px] border-t-2">
         <div>
-          <p className="text-center mt-5">Powered by:</p>
+          <p className="text-center mt-5 font-roboto">Powered by:</p>
           <div className="inline-block flex">
-            <p className="m-[20px]">Nextjs</p>
-            <p className="m-[20px]">Tailwind</p>
-            <p className="m-[20px]">Framer Motion</p>
+            <p className="m-[20px] font-advent">Nextjs</p>
+            <p className="m-[20px] font-advent">Tailwind</p>
+            <p className="m-[20px] font-advent">Framer Motion</p>
+            <p className="m-[20px] font-advent">Vercel</p>
           </div>
         </div>
         <ul className="m-[20px] ">
           <li className="inline-block m-[20px] text-center text-[15px] ">
-            <Image src={instagram} alt="random"></Image> Instagram
+            <Image src={instagram} alt="random" className="w-[80px]"></Image>{" "}
+            Instagram
           </li>
           <li className="inline-block m-[20px] text-center text-[15px]">
             {" "}
-            <Image src={facebook} alt="random"></Image>Facebook
+            <Image src={facebook} alt="random" className="w-[80px]"></Image>
+            <Link href="https://www.facebook.com/axon.draws.1/">Facebook</Link>
           </li>
           <li className="inline-block m-[20px] text-center text-[15px]">
-            <Image src={github} alt="random"></Image>
+            <Image src={github} alt="random" className="w-[70px]"></Image>
             <Link href="https://github.com/AxonSkie?tab=repositories    ">
               Github
             </Link>

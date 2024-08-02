@@ -30,10 +30,10 @@ export default function Home() {
         <div className="flex flex-1 justify-center items-center sm:mr-5 ">
           <div className="text-white text-[40px] text-center ">
             <h1 className="text-[30px] sm:text-[50px]">Hello! Im</h1>
-            <h1 className="text-blue-primary  text-[30px] sm:text-[50px]">
+            <h1 className="text-blue-primary  text-[30px] font-roboto sm:text-[50px]">
               Axon Gabriel B. Matalubos
             </h1>
-            <p className="text-[15px]">
+            <p className="text-[15px] sm:text-[20px]">
               Im an aspiring UI/UX designer and specilize in front end
               development. Im ready to turn your ideas into an existence.
               Currently a student and a freelancer at the same time
