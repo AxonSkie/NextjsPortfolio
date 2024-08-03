@@ -28,7 +28,7 @@ function Popup() {
               duration: 0.5,
               ease: "easeInOut",
             }}
-            className="bg-blue-secondary w-[100%] min-h-[500px] absolute top-20 left-0  z-1 mt-20 mr-14 sm:min-h-[550px] sm:w-[100%] md:w-[50%] lg:w-[50%] lg:top-11"
+            className="bg-blue-secondary w-[100%] min-h-[500px] absolute top-20 left-0   mt-20 mr-14 sm:min-h-[550px] sm:w-[100%] md:w-[50%] lg:w-[50%] lg:top-11"
           >
             <div className="mt-5">
               <h2 className="text-[20px] text-blue-azure lg:text-[30px]">
