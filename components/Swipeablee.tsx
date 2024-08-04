@@ -30,7 +30,7 @@ function Swipeablee() {
   return (
     <motion.div
       {...handlers}
-      className="relative w-full max-w-lg mx-auto overflow-hidden z-0"
+      className="relative w-full max-w-lg mx-auto overflow-hidden z-0 flex flex-row"
     >
       <motion.img
         key={currentIndex} // This will force re-render when index changes

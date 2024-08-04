@@ -11,6 +11,8 @@ import Invert from "@/components/Invert";
 import Upload from "../public/gifs/Upload.gif";
 import Mastery from "@/components/Mastery";
 import MasteryContent from "@/components/MasteryContent";
+import nezuko from "../public/arts/nezuko.png";
+import gojo from "../public/arts/gojo.png";
 
 export default function Home() {
   return (
@@ -52,8 +54,23 @@ export default function Home() {
         <div className="bg-blue-dark w-full min-h-[600px] text-center flex-row justify-center">
           <h1 className="text-white text-3xl mt-4 ">Some of my Arts :O</h1>
           <div className=" flex justify-center flex-row">
-            <div className="w-[400px] mt-[20px]">
+            <div className="hidden lg:flex-1  lg:flex lg:justify-center lg:items-center">
+              <Image
+                src={nezuko}
+                className="sm:w-[400px] sm:h-[400px]"
+                alt="h"
+              ></Image>
+            </div>
+            <div className="w-[400px] mt-[20px] flex-1 ">
               <Swipeablee />
+            </div>
+
+            <div className=" hidden sm:flex-1 lg:block lg:flex lg:justify-center lg:items-center">
+              <Image
+                src={gojo}
+                className="sm:w-[400px] sm:h-[400px]"
+                alt="h"
+              ></Image>
             </div>
           </div>
           <div className="mt-[30px]">
