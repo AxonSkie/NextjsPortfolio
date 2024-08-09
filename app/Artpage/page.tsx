@@ -22,12 +22,12 @@ function Artpage() {
       <div className="w-[100vw] min-h-[55vh]  flex flex-col mt-[20px]  sm:hidden">
         <div className="flex flex-3  items-center ">
           <div>
-            <Image src={demontext}></Image>
+            <Image src={demontext} alt="random"></Image>
           </div>
         </div>
         <div className="flex flex-2 justify-end ">
           <div>
-            <Image src={slayertext}></Image>
+            <Image src={slayertext} alt="random"></Image>
           </div>
         </div>
         <div className="flex flex-1  justify-center mt-[20px] font-roboto">
@@ -45,14 +45,18 @@ function Artpage() {
             </div>
             <div className="flex-1 flex justify-center">
               <div>
-                <Image src={demonslayertext} className="w-[700px]"></Image>
+                <Image
+                  src={demonslayertext}
+                  className="w-[700px]"
+                  alt="random"
+                ></Image>
               </div>
             </div>
           </div>
           <div className="flex-1 bg-blue-800"></div>
           <div className="flex-1 bg-pink-800"></div>
         </div>
-        <div className=" bg-green-500 min-w-[600px]"></div>
+        <div className=" bg-green-500 min-w-[300px]"></div>
       </div>
     </main>
   );
