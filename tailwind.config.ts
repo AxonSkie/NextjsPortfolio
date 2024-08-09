@@ -17,7 +17,18 @@ const config: Config = {
           background: '#103855',
           dark: '#0D2D44',
           azure:'#4863A0',
-          darker:'#001350'
+          darker:'#001350',
+          blackk:'#050505',
+        },
+        purple: {
+          purprim: '#FD7AFF',
+          secondary: '#5AC7F6',
+          mywhite: '#FFFFFF',
+          background: '#103855',
+          dark: '#0D2D44',
+          azure:'#4863A0',
+          darker:'#001350',
+          blackk:'#050505',
         },
       },
       fontFamily: {
