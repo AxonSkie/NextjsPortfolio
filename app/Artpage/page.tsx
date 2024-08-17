@@ -116,9 +116,9 @@ function Artpage() {
           </div>
         </div>
       </div>
-      <div className=" sm:block sm:min-h-[100vh] ">
-        <div className="relative min-h-[100vh] w-full z-0 bg-nezuko-backM bg-cover sm:bg-nezuko-back sm:bg-no-repeat  ">
-          <div className="relative z-10 min-h-[100vh] w-full bg-green-600 ">
+      <div className=" min-h-[100vh] sm:block sm:min-h-screen bg-nezuko-backM bg-cover sm:bg-nezuko-back sm:bg-no-repeat">
+        <div className="relative min-h-[100vh] w-full z-0   ">
+          <div className="relative z-10 min-h-[100vh] w-full mt-[40px]">
             <div>
               <Swipers />
             </div>

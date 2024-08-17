@@ -5,10 +5,12 @@ import Link from "next/link";
 import icondrop from "../public/images/icondrop.png";
 import Dropdowns from "./SecondDropdowns";
 import socialmedia from "../public/images/Social.png";
+import shinobu from "../public/arts/SHINOBU.jpg";
+
 
 const Navbarss = () => {
   return (
-    <div className=" w-full h-20 flex min-h-[100px] sticky z-50 bg-black">
+    <div className=" w-full h-20 flex min-h-[100px] sticky z-50 bg-black border-b-2 border-white">
       <div className="flex-1 flex justify-center items-center  sm:justify-start items-start ">
         <div>
           <Link href="/app">
