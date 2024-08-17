@@ -72,7 +72,7 @@ function Swipers() {
         </Swiper>
 
         <div className="w-full min-h-[100px]  flex items-center justify-center">
-          <Image src={swipe} className="w-[100px]"></Image>
+          <Image src={swipe} className="w-[100px]" alt="random"></Image>
           <h1 className="text-white">swipe to change slides</h1>
         </div>
       </div>
