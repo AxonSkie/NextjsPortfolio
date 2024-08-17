@@ -58,6 +58,7 @@ function Artpage() {
                 <Image
                   src={Nezukuwu}
                   className="w-[300px] bg-purple-purprim rounded-full"
+                  alt="random"
                 ></Image>
               </div>
             </div>
@@ -76,7 +77,11 @@ function Artpage() {
                   </div>
                   <div className="flex-1  flex justify-center">
                     <div>
-                      <Image src={DemonSlayerLG} className="w-[800px]"></Image>
+                      <Image
+                        src={DemonSlayerLG}
+                        className="w-[800px]"
+                        alt="random"
+                      ></Image>
                     </div>
                   </div>
                 </div>
@@ -89,6 +94,7 @@ function Artpage() {
                 <Image
                   src={Nezukuwu}
                   className="w-[470px] bg-purple-purprim rounded-full mr-[50px]"
+                  alt="random"
                 ></Image>
               </div>
             </div>
