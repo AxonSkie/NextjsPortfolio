@@ -88,13 +88,13 @@ function Artpage() {
               </div>
               <div className="flex-2  flex justify-center">
                 <div>
-                  <Image src={instaW}></Image>
+                  <Image src={instaW} alt="random"></Image>
                 </div>
                 <div>
-                  <Image src={faceW}></Image>
+                  <Image src={faceW} alt="random"></Image>
                 </div>
                 <div>
-                  <Image src={githW}></Image>
+                  <Image src={githW} alt="random"></Image>
                 </div>
               </div>
               <div className="flex-1 mt-[20px]">
