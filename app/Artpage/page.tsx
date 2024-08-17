@@ -12,6 +12,7 @@ import instaW from "../../public/images/instagramW.png";
 import faceW from "../../public/images/facebookW.png";
 import githW from "../../public/images/githubW.png";
 import Button from "@/assets/button";
+import Swipers from "@/components/Swipers";
 
 import Image from "next/image";
 
@@ -117,7 +118,11 @@ function Artpage() {
       </div>
       <div className=" sm:block sm:min-h-[100vh] ">
         <div className="relative min-h-[100vh] w-full z-0 bg-nezuko-backM bg-cover sm:bg-nezuko-back sm:bg-no-repeat  ">
-          <div className="relative z-10 min-h-[100vh] w-full bg-green-600 "></div>
+          <div className="relative z-10 min-h-[100vh] w-full bg-green-600 ">
+            <div>
+              <Swipers />
+            </div>
+          </div>
         </div>
       </div>
     </main>
