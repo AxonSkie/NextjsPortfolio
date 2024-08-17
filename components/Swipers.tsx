@@ -7,6 +7,7 @@ import Image from "next/image";
 import nezuku from "../public/arts/nezuko.png";
 import shinobu from "../public/arts/SHINOBU.png";
 import swipe from "../public/images/swipe.png";
+import nezuku2 from "../public/arts/nezuku2.png";
 
 function Swipers() {
   return (
@@ -66,7 +67,26 @@ function Swipers() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-full min-h-[300px] bg-yellow-300"></div>
+            <div className="w-full min-h-[300px] bg-yellow-300 border-2 border-white">
+              <div className="flex-1 bg-pink-500 flex flex-col ">
+                <div className="flex-1 bg-black flex justify-center">
+                  <div>
+                    <Image
+                      src={nezuku2}
+                      className="w-[300px] rounded-md sm:w-[400px] sm:h-[500px]"
+                      alt="random"
+                    ></Image>
+                  </div>
+                </div>
+                <div className="flex-1 bg-black min-h-[100px] text-center">
+                  <div className="flex justify-center mt-[10px]">
+                    <div className="bg-white  rounded-full p-[10px]">
+                      <h1 className="text-black font-roboto">Old Version</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
           ...
         </Swiper>
