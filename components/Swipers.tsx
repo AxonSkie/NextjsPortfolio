@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import Image from "next/image";
 import nezuku from "../public/arts/nezuko.png";
@@ -9,11 +8,13 @@ import shinobu from "../public/arts/SHINOBU.png";
 import swipe from "../public/images/swipe.png";
 import nezuku2 from "../public/arts/nezuku2.png";
 
+// Define the types for the props
 function Swipers() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalImage, setModalImage] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [modalImage, setModalImage] = useState<string>("");
 
-  const openModal = (imageSrc) => {
+  // Explicitly type the imageSrc parameter as string
+  const openModal = (imageSrc: string) => {
     setModalImage(imageSrc);
     setIsModalOpen(true);
   };
@@ -36,10 +37,13 @@ function Swipers() {
             <div className="w-full min-h-[300px] bg-green-400 flex border-2 border-white sm:min-h-[600px]">
               <div className="flex-1 bg-pink-500 flex flex-col">
                 <div className="flex-1 bg-black flex justify-center">
-                  <div onClick={() => openModal(shinobu)}>
+                  <div
+                    onClick={() => openModal(shinobu.src)}
+                    className="cursor-pointer"
+                  >
                     <Image
                       src={shinobu}
-                      className="w-[300px] rounded-md sm:w-[400px] sm:h-[500px] cursor-pointer"
+                      className="w-[300px] rounded-md sm:w-[400px] sm:h-[500px]"
                       alt="Shinobu"
                     />
                   </div>
@@ -58,10 +62,13 @@ function Swipers() {
             <div className="w-full min-h-[300px] bg-purple-500 flex border-2 border-white sm:min-h-[600px]">
               <div className="flex-1 bg-pink-500 flex flex-col">
                 <div className="flex-1 bg-black flex justify-center">
-                  <div onClick={() => openModal(nezuku)}>
+                  <div
+                    onClick={() => openModal(nezuku.src)}
+                    className="cursor-pointer"
+                  >
                     <Image
                       src={nezuku}
-                      className="w-[200px] rounded-md sm:w-[400px] sm:h-[500px] cursor-pointer"
+                      className="w-[200px] rounded-md sm:w-[400px] sm:h-[500px]"
                       alt="Nezuko"
                     />
                   </div>
@@ -82,10 +89,13 @@ function Swipers() {
             <div className="w-full min-h-[300px] bg-yellow-300 border-2 border-white">
               <div className="flex-1 bg-pink-500 flex flex-col">
                 <div className="flex-1 bg-black flex justify-center">
-                  <div onClick={() => openModal(nezuku2)}>
+                  <div
+                    onClick={() => openModal(nezuku2.src)}
+                    className="cursor-pointer"
+                  >
                     <Image
                       src={nezuku2}
-                      className="w-[300px] rounded-md sm:w-[400px] sm:h-[500px] cursor-pointer"
+                      className="w-[300px] rounded-md sm:w-[400px] sm:h-[500px]"
                       alt="Nezuko2"
                     />
                   </div>
