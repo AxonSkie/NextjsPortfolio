@@ -22,19 +22,17 @@ const config: Config = {
         },
         purple: {
           purprim: '#FD7AFF',
-          secondary: '#5AC7F6',
-          mywhite: '#FFFFFF',
-          background: '#103855',
-          dark: '#0D2D44',
-          azure:'#4863A0',
-          darker:'#001350',
-          blackk:'#050505',
+          
         },
       },
       fontFamily: {
         advent: ['"Advent Pro"', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
       },
+      backgroundImage: {
+        'hero-pattern': "url('/images/backgroundN.png')"
+        
+      }
     },
   },
   plugins: [],

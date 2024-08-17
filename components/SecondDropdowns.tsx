@@ -13,8 +13,8 @@ const Dropdowns = () => {
   };
 
   const list = {
-    hidden: { opacity: 0.5, y: -64 },
-    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0.5, y: -64, height: 0, overflow: "hidden" },
+    visible: { opacity: 1, y: 0, height: 150 },
   };
   const buttonVariants = {
     open: { scale: 1.1, rotate: 90 },
@@ -39,7 +39,7 @@ const Dropdowns = () => {
             initial="hidden"
             animate="visible"
             variants={list}
-            transition={{ duration: 1, easeIn }}
+            transition={{ duration: 0.5, easeIn }}
             className="text-black bg-white absolute w-full min-h-[150px] text-center "
           >
             <ul>
