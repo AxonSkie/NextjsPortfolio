@@ -11,14 +11,14 @@ import Nezukuwu from "../../public/images/NezukuwuP.png";
 import instaW from "../../public/images/instagramW.png";
 import faceW from "../../public/images/facebookW.png";
 import githW from "../../public/images/githubW.png";
-import SwitchSlide from "@/components/SwitchSlide";
+import Button from "@/assets/button";
 
 import Image from "next/image";
 
 function Artpage() {
   return (
     <main className="bg-black w-full min-h-screen">
-      <div>
+      <div className="sticky top-0 z-10">
         <Navbarss />
       </div>
       <div className=" min-h-[100vh] flex items-center justify-center">
@@ -63,7 +63,7 @@ function Artpage() {
               </div>
             </div>
           </div>
-          <div className="hidden sm:block sm:w-full sm:min-h-[75vh]  sm:flex ">
+          <div className="hidden sm:block sm:w-full lg:min-h-[75vh]  lg:flex ">
             <div className="flex-1 flex  flex-col">
               <div className="flex-1 flex  flex-col ">
                 <div className="flex-1 flex justify-center  flex-col ">
@@ -86,10 +86,24 @@ function Artpage() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 bg-blue-800"></div>
-              <div className="flex-1 bg-pink-800"></div>
+              <div className="flex-2  flex justify-center">
+                <div>
+                  <Image src={instaW}></Image>
+                </div>
+                <div>
+                  <Image src={faceW}></Image>
+                </div>
+                <div>
+                  <Image src={githW}></Image>
+                </div>
+              </div>
+              <div className="flex-1 mt-[20px]">
+                <div>
+                  <Button />
+                </div>
+              </div>
             </div>
-            <div className="  min-w-[300px] flex-2  flex items-center">
+            <div className="  min-w-[300px] flex-2  flex items-center justify-center">
               <div className="bg-hero-pattern bg-cover bg-no-repeat">
                 <Image
                   src={Nezukuwu}
@@ -101,8 +115,10 @@ function Artpage() {
           </div>
         </div>
       </div>
-      <div className="hidden sm:block sm:min-h-[100vh] ">
-        <SwitchSlide />
+      <div className=" sm:block sm:min-h-[100vh] ">
+        <div className="relative min-h-[100vh] w-full z-0 bg-nezuko-backM bg-cover sm:bg-nezuko-back sm:bg-no-repeat  ">
+          <div className="relative z-10 min-h-[100vh] w-full bg-green-600 "></div>
+        </div>
       </div>
     </main>
   );

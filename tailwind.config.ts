@@ -30,7 +30,9 @@ const config: Config = {
         roboto: ['Roboto', 'sans-serif'],
       },
       backgroundImage: {
-        'hero-pattern': "url('/images/backgroundN.png')"
+        'hero-pattern': "url('/images/backgroundN.png')",
+        'nezuko-back' : "url('/arts/nezukoback.png')",
+        'nezuko-backM' : "url('/arts/nezukobackM.png')",
         
       }
     },

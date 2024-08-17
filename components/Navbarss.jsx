@@ -8,7 +8,7 @@ import socialmedia from "../public/images/Social.png";
 
 const Navbarss = () => {
   return (
-    <div className=" w-full h-20 flex min-h-[100px] sticky z-50">
+    <div className=" w-full h-20 flex min-h-[100px] sticky z-50 bg-black">
       <div className="flex-1 flex justify-center items-center  sm:justify-start items-start ">
         <div>
           <Link href="/app">
