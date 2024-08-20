@@ -71,8 +71,8 @@ function Artpage() {
                   <div className="flex-1  flex items-end justify-center">
                     <div>
                       <h1 className="text white text-[60px] font-advent text-white">
-                        Explore beautiful{" "}
-                        <span className="text-purple-purprim">Arts</span>
+                        Delve into my{" "}
+                        <span className="text-purple-purprim">Art Gallery</span>
                       </h1>
                     </div>
                   </div>
