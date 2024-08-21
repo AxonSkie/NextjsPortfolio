@@ -14,12 +14,14 @@ import Mastery from "@/components/Mastery";
 import MasteryContent from "@/components/MasteryContent";
 import nezuko from "../public/arts/nezuko.png";
 import gojo from "../public/arts/gojo.png";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { animate, backIn, easeIn } from "framer-motion";
 
 function Mainfile() {
   const [isOpen, setIsOpen] = useState(false);
+  const firstContainer = useRef<HTMLDivElement | null>(null);
+  const secondContainer = useRef<HTMLDivElement | null>(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -32,6 +34,18 @@ function Mainfile() {
   const buttonVariants = {
     open: { scale: 1.1, rotate: 90 },
     closed: { scale: 1, rotate: 0 },
+  };
+
+  const focusFirst = () => {
+    if (firstContainer.current) {
+      firstContainer.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const focusSecond = () => {
+    if (secondContainer.current) {
+      secondContainer.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
   return (
     <div>
@@ -59,10 +73,10 @@ function Mainfile() {
                 >
                   <ul>
                     <li className="px-4 py-2  cursor-pointer">
-                      <Link href="">Achievements</Link>
+                      <button onClick={focusFirst}>Art Section</button>
                     </li>
                     <li className="px-4 py-2  cursor-pointer">
-                      <Link href="">Projects</Link>
+                      <button onClick={focusSecond}>Projects</button>
                     </li>
                     <li className="px-4 py-2  cursor-pointer">
                       <Link href="/Artpage">Artpage</Link>
@@ -104,7 +118,10 @@ function Mainfile() {
       <div>
         <Boundary />
       </div>
-      <div className=" w-full min-h-[700px] flex items-center">
+      <div
+        className=" w-full min-h-[700px] flex items-center"
+        ref={firstContainer}
+      >
         <div className="bg-blue-dark w-full min-h-[600px] text-center flex-row justify-center">
           <h1 className="text-white text-3xl mt-4 ">Some of my Arts :O</h1>
           <div className=" flex justify-center flex-row">
@@ -145,7 +162,7 @@ function Mainfile() {
       <div>
         <Boundary />
       </div>
-      <div className=" w-full min-h-[1500px] flex">
+      <div className=" w-full min-h-[1500px] flex" ref={secondContainer}>
         <div className="bg-blue-dark w-full min-h-[600px] text-center flex flex-col">
           <h1 className="text-white text-3xl mt-4 ">Simple Projects</h1>
 
