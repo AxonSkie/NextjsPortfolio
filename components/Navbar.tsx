@@ -8,7 +8,7 @@ import socialmedia from "../public/images/Social.png";
 
 const Navbar = () => {
   return (
-    <div className="bg-blue-secondary w-full h-20 flex min-h-[100px] sticky z-50">
+    <div className="bg-blue-secondary w-full h-20 flex min-h-[50px] sticky z-50">
       <div className="flex-1 flex justify-center items-center  sm:justify-start items-start ">
         <div>
           <Link href="http://localhost:3000">

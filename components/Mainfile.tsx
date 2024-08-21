@@ -49,8 +49,9 @@ function Mainfile() {
   };
   return (
     <div>
-      <div>
+      <div className="sticky z-10 top-0">
         <Navbar />
+
         <div className="sm:hidden">
           <div className=" absolute z-50  top-0 w-[95%] min-h-[100px]  flex justify-end items-center">
             <div>
