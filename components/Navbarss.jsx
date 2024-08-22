@@ -24,9 +24,7 @@ const Navbarss = () => {
 
       <div className="flex-1 flex justify-end items-center mr-6">
         <div className="">
-          <div className="sm:hidden">
-            <Dropdowns />
-          </div>
+          
           <div className="hidden sm:block flex text-white ">
             <ul>
               <li className="m-2">

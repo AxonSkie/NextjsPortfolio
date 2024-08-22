@@ -4,7 +4,7 @@ import React from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import App from "next/app";
+
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
