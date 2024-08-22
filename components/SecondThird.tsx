@@ -42,7 +42,7 @@ function SecondThird() {
       </div>
       <div className="flex-1  sm:hidden flex justify-center">
         <div>
-          <Image src={sukuna} className="w-[200px]"></Image>
+          <Image src={sukuna} className="w-[200px]" alt="random"></Image>
         </div>
       </div>
       <div className="hidden sm:flex-1 sm:flex bg-purple-400 flex">
