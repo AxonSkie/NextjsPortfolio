@@ -101,7 +101,7 @@ function Mainfile() {
             ></Image>
           </div>
         </div>
-        <div className="flex flex-1 justify-center items-center sm:mr-5 ">
+        <div className="flex flex-1 justify-center items-center mb-[100px] sm:mr-5  sm:mb-[0px]">
           <div className="text-white text-[40px] text-center ">
             <h1 className="text-[30px] sm:text-[50px]">Hello! Im</h1>
             <h1 className="text-blue-primary  text-[30px] font-roboto sm:text-[50px]">
