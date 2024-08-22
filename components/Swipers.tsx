@@ -86,7 +86,7 @@ function Swipers() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-full min-h-[300px] bg-yellow-300 border-2 border-white">
+            <div className="w-full min-h-[300px] bg-black border-2 border-white">
               <div className="flex-1 bg-pink-500 flex flex-col">
                 <div className="flex-1 bg-black flex justify-center">
                   <div

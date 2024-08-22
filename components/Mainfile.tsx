@@ -16,6 +16,7 @@ import nezuko from "../public/arts/nezuko.png";
 import gojo from "../public/arts/gojo.png";
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import myprofilee from "../public/images/myprofile2.png";
 import { animate, backIn, easeIn } from "framer-motion";
 
 function Mainfile() {
@@ -90,13 +91,15 @@ function Mainfile() {
         </div>
       </div>
 
-      <div className="flex w-full min-h-[500px] mt-8 flex-col sm:flex-col md:flex-row">
-        <div className="flex flex-1  justify-center">
-          <Image
-            src={myportfolio}
-            className="w-[600px] h-[350px] sm:w-[700px] sm:h-[600px] md:w-[600px] md:h-[400px] lg:w-[1000px] lg:h-[500px]"
-            alt="random"
-          ></Image>
+      <div className="flex w-full min-h-[500px]  flex-col sm:flex-col md:flex-row ">
+        <div className="flex flex-1  justify-center ">
+          <div className="">
+            <Image
+              src={myprofilee}
+              className="w-[500px] h-[550px] sm:w-[700px] sm:h-[600px] md:w-[500px] md:h-[600px] lg:w-[500px] lg:h-[680px]"
+              alt="random"
+            ></Image>
+          </div>
         </div>
         <div className="flex flex-1 justify-center items-center sm:mr-5 ">
           <div className="text-white text-[40px] text-center ">
