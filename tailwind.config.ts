@@ -24,10 +24,15 @@ const config: Config = {
           purprim: '#FD7AFF',
           
         },
+
+        red: {
+          redprim: '#FF0000',
+        }
       },
       fontFamily: {
         advent: ['"Advent Pro"', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+        poppins: ['Poppins' , 'sans-serif'],
       },
       backgroundImage: {
         'hero-pattern': "url('/images/backgroundN.png')",

@@ -15,10 +15,12 @@ import React from "react";
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { animate, backIn, easeIn } from "framer-motion";
+import SecondThird from "./SecondThird";
 
 function SecondMain() {
   const [isOpen, setIsOpen] = useState(false);
   const demonRef = useRef<HTMLDivElement | null>(null);
+  const thirdContainer = useRef<HTMLDivElement | null>(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -26,6 +28,12 @@ function SecondMain() {
   const focusDemon = () => {
     if (demonRef.current) {
       demonRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const thirdFunc = () => {
+    if (thirdContainer.current) {
+      thirdContainer.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -64,7 +72,9 @@ function SecondMain() {
                 className="text-black bg-white absolute w-full min-h-[150px] text-center "
               >
                 <ul>
-                  <li className="m-[20px] ">Demon Slayer</li>
+                  <li className="m-[20px] ">
+                    <button onClick={thirdFunc}>Jujutsu Kaisen Section</button>
+                  </li>
                   <li className="m-[20px] border-t-2 border-gray-800">
                     <button onClick={focusDemon}>Demon Slayer Section</button>
                   </li>
@@ -179,6 +189,9 @@ function SecondMain() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="min-h-[100vh] w-full" ref={thirdContainer}>
+        <SecondThird />
       </div>
     </div>
   );
