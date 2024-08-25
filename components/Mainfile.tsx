@@ -96,7 +96,7 @@ function Mainfile() {
           <div className="">
             <Image
               src={myprofilee}
-              className="w-[500px] h-[550px] sm:w-[700px] sm:h-[600px] md:w-[500px] md:h-[600px] lg:w-[800px] lg:h-[920px]"
+              // className="w-[500px] h-[550px] sm:w-[700px] sm:h-[600px] md:w-[500px] md:h-[600px] lg:w-[800px] lg:h-[920px]"
               alt="random"
             ></Image>
           </div>
