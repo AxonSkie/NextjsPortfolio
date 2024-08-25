@@ -8,20 +8,26 @@ import shinobu from "../public/arts/SHINOBU.png";
 import swipe from "../public/images/swipe.png";
 import nezuku2 from "../public/arts/nezuku2.png";
 
-// Define the types for the props
 function Swipers() {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [modalImage, setModalImage] = useState<string>("");
+  const [modalImage, setModalImage] = useState<{
+    src: string;
+    width: number;
+    height: number;
+  }>({ src: "", width: 0, height: 0 });
 
-  // Explicitly type the imageSrc parameter as string
-  const openModal = (imageSrc: string) => {
-    setModalImage(imageSrc);
+  const openModal = (
+    imageSrc: string,
+    imageWidth: number,
+    imageHeight: number
+  ) => {
+    setModalImage({ src: imageSrc, width: imageWidth, height: imageHeight });
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
-    setModalImage("");
+    setModalImage({ src: "", width: 0, height: 0 });
   };
 
   return (
@@ -38,12 +44,14 @@ function Swipers() {
               <div className="flex-1 bg-pink-500 flex flex-col">
                 <div className="flex-1 bg-black flex justify-center">
                   <div
-                    onClick={() => openModal(shinobu.src)}
+                    onClick={() => openModal(shinobu.src, 400, 500)}
                     className="cursor-pointer"
                   >
                     <Image
                       src={shinobu}
-                      className="w-[300px] rounded-md sm:w-[400px] sm:h-[500px]"
+                      width={400}
+                      height={500}
+                      className="rounded-md sm:w-[400px] sm:h-[500px]"
                       alt="Shinobu"
                     />
                   </div>
@@ -63,12 +71,14 @@ function Swipers() {
               <div className="flex-1 bg-pink-500 flex flex-col">
                 <div className="flex-1 bg-black flex justify-center">
                   <div
-                    onClick={() => openModal(nezuku.src)}
+                    onClick={() => openModal(nezuku.src, 400, 500)}
                     className="cursor-pointer"
                   >
                     <Image
                       src={nezuku}
-                      className="w-[200px] rounded-md sm:w-[400px] sm:h-[500px]"
+                      width={400}
+                      height={500}
+                      className="rounded-md sm:w-[400px] sm:h-[500px]"
                       alt="Nezuko"
                     />
                   </div>
@@ -90,12 +100,14 @@ function Swipers() {
               <div className="flex-1 bg-pink-500 flex flex-col">
                 <div className="flex-1 bg-black flex justify-center">
                   <div
-                    onClick={() => openModal(nezuku2.src)}
+                    onClick={() => openModal(nezuku2.src, 400, 500)}
                     className="cursor-pointer"
                   >
                     <Image
                       src={nezuku2}
-                      className="w-[300px] rounded-md sm:w-[400px] sm:h-[500px]"
+                      width={400}
+                      height={500}
+                      className="rounded-md sm:w-[400px] sm:h-[500px]"
                       alt="Nezuko2"
                     />
                   </div>
@@ -110,11 +122,16 @@ function Swipers() {
               </div>
             </div>
           </SwiperSlide>
-          {/* Add more SwiperSlide items as needed */}
         </Swiper>
 
         <div className="w-full min-h-[100px] flex items-center justify-center">
-          <Image src={swipe} className="w-[100px]" alt="Swipe" />
+          <Image
+            src={swipe}
+            width={100}
+            height={100}
+            className="w-[100px]"
+            alt="Swipe"
+          />
           <h1 className="text-white">Swipe to change slides</h1>
         </div>
 
@@ -126,7 +143,9 @@ function Swipers() {
           >
             <div className="relative">
               <Image
-                src={modalImage}
+                src={modalImage.src}
+                width={modalImage.width}
+                height={modalImage.height}
                 className="max-w-full max-h-screen"
                 alt="Enlarged view"
               />

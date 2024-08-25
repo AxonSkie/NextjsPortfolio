@@ -45,8 +45,28 @@ function SecondThird() {
           <Image src={sukuna} className="w-[200px]" alt="random"></Image>
         </div>
       </div>
-      <div className="hidden sm:flex-1 sm:flex bg-purple-400 flex">
-        <div className=""></div>
+      <div className="hidden sm:flex-1 sm:flex">
+        <div className="flex-1 bg-red-600 justify-center flex items-center">
+          <div>
+            <Image src={sukuna} className="w-[300px]" alt="random"></Image>
+          </div>
+        </div>
+        <div className="flex-1  flex justify-center flex-col">
+          <div className="flex-1  flex flex-col items-center justify-center">
+            <h1 className="text-[40px] text-white font-advent">
+              More <span className="text-red-redprim">Awesome Works</span>
+            </h1>
+            <div className="flex flex-row gap-[10px]">
+              <div>
+                <Image src={jujutsu} alt="random" className="w-[300px]"></Image>
+              </div>
+              <div>
+                <Image src={kaisen} alt="random"></Image>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 bg-purple-100"></div>
+        </div>
       </div>
     </div>
   );

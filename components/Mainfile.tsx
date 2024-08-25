@@ -92,14 +92,16 @@ function Mainfile() {
       </div>
 
       <div className="flex w-full min-h-[500px]  flex-col sm:flex-col md:flex-row ">
-        <div className="flex flex-1  justify-center ">
+        <div className="flex flex-1  justify-center flex-col">
           <div className="">
             <Image
               src={myprofilee}
-              className="w-[500px] h-[550px] sm:w-[700px] sm:h-[600px] md:w-[500px] md:h-[600px] lg:w-[500px] lg:h-[680px]"
+              className="w-[500px] h-[550px] sm:w-[700px] sm:h-[600px] md:w-[500px] md:h-[600px] lg:w-[800px] lg:h-[920px]"
               alt="random"
             ></Image>
           </div>
+
+          <div className=""></div>
         </div>
         <div className="flex flex-1 justify-center items-center mb-[100px] sm:mr-5  sm:mb-[0px]">
           <div className="text-white text-[40px] text-center ">
