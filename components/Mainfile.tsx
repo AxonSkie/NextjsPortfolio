@@ -377,15 +377,12 @@ function Mainfile() {
                     <h1>CSS</h1>
                   </div>
                 </div>
-
-                <p className="mt-6 text-black m-[10px] text-[15px]">
-                  <p className="mt-6 text-white m-[10px]">
-                    My very first fully functional CRUD system. This was my 2nd
-                    freelance Job that I tool. This is an Art Gallery website
-                    This build using PHP,HTML,CSS,JS and MySql for the database
-                  </p>
-                  ;
+                <p className="mt-6 text-white m-[10px]">
+                  My very first fully functional CRUD system. This was my 2nd
+                  freelance Job that I tool. This is an Art Gallery website This
+                  build using PHP,HTML,CSS,JS and MySql for the database
                 </p>
+                ;
               </div>
             </div>
             <div className="w-[60%] lg:w-[50%] h-[480px] bg-gradient-to-t from-blue-primary via-gray-600 to-white ...  flex flex-col rounded-lg mt-[10px] border-2 border-white">

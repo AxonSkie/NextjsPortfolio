@@ -54,13 +54,13 @@ const data = [
   {
     category: "Art #1",
     title: "Nezuku",
-    src: nezuku,
+    src: nezuku.src,
     content: <NezukuPage />,
   },
   {
     category: "Art #2",
     title: "Sukuna / Yuji Itadori",
-    src: sukuna,
+    src: sukuna.src,
     content: <SukunaPage />,
   },
   {
@@ -73,7 +73,7 @@ const data = [
   {
     category: "Art #4",
     title: "Gojo Satoru",
-    src: gojo,
+    src: gojo.src,
     content: <GojoPage />,
   },
 ];
