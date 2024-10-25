@@ -66,7 +66,7 @@ const data = [
   {
     category: "Art #3",
     title: "Kuki Shinobu",
-    src: shinobu,
+    src: shinobu.src,
     content: <ShinobuPage />,
   },
 
