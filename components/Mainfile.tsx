@@ -311,7 +311,7 @@ function Mainfile() {
           </div>
 
           <div className=" w-full min-h-[100vh] flex  gap-[20px]  justify-center items-center flex-col md:flex-row md:flex-wrap">
-            <div className="w-[60%] md:w-[40%] lg:w-[30%] h-[480px] bg-gradient-to-t from-blue-primary via-gray-600 to-white ...  flex flex-col rounded-lg mt-[10px] border-2 border-white">
+            <div className="w-[90%] md:w-[40%] lg:w-[30%] h-[480px] bg-gradient-to-t from-blue-primary via-gray-600 to-white ...  flex flex-col rounded-lg mt-[10px] border-2 border-white">
               <div className="flex-1  flex justify-center items-center flex-col">
                 <h1 className="text-[20px] mb-[20px] text-blue-darker font-poppins border-b-2 border-black">
                   <span className="text-green-500 ">La Salle</span> Management
@@ -348,7 +348,7 @@ function Mainfile() {
                 </p>
               </div>
             </div>
-            <div className="w-[60%] md:w-[40%] lg:w-[30%] h-[480px] bg-gradient-to-t from-blue-primary via-gray-600 to-white ...  flex flex-col rounded-lg mt-[10px] border-2 border-white">
+            <div className="w-[90%] md:w-[40%] lg:w-[30%] h-[480px] bg-gradient-to-t from-blue-primary via-gray-600 to-white ...  flex flex-col rounded-lg mt-[10px] border-2 border-white">
               <div className="flex-1  flex justify-center items-center flex-col">
                 <h1 className="text-[20px] mb-[20px] text-blue-darker font-poppins border-b-2 border-black">
                   <span className="text-blue-primary ">Upload </span>
@@ -385,7 +385,7 @@ function Mainfile() {
                 ;
               </div>
             </div>
-            <div className="w-[60%] lg:w-[50%] h-[480px] bg-gradient-to-t from-blue-primary via-gray-600 to-white ...  flex flex-col rounded-lg mt-[10px] border-2 border-white">
+            <div className="w-[90%] lg:w-[50%] h-[480px] bg-gradient-to-t from-blue-primary via-gray-600 to-white ...  flex flex-col rounded-lg mt-[10px] border-2 border-white">
               <div className="flex-1  flex justify-center items-center flex-col">
                 <h1 className="text-[20px] mb-[20px] text-blue-darker font-poppins border-b-2 border-black">
                   <span className="text-red-500 ">Axon{"'"}s</span> Ecommerce
