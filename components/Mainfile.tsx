@@ -86,7 +86,7 @@ function Mainfile() {
   return (
     <div className="min-h-screen w-full  flex flex-col overflow-hidden">
       {isOpen2 && (
-        <div className="bg-black min-h-[3945.6px]   md:min-h-[4025px] lg:min-h-[4150px] w-full absolute opacity-[0.5] z-30"></div>
+        <div className="bg-black min-h-[3900.6px]  sm:min-h-[3724px] md:min-h-[3428px] lg:min-h-[3652.6px] w-full absolute opacity-[0.5] z-30"></div>
       )}
 
       <div className="">
@@ -169,7 +169,7 @@ function Mainfile() {
                   <p className="text-[15px] lg:text-[20px] text-white">
                     - Not really a long experience, but I started 1 year ago
                   </p>
-                  <h2 className="text-[10px] text-blue-azure mt-4 lg:text-[30px]">
+                  <h2 className="text-[20px] text-blue-azure mt-4 lg:text-[30px]">
                     •Are you currently
                     <span className="text-blue-950 "> studying?</span>
                   </h2>
