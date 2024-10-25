@@ -326,7 +326,7 @@ function Mainfile() {
                 </div>
               </div>
               <div className="flex-1 mt-[10px] text-center">
-                <div className="flex-1  flex flex-row justify-center mb-[10px] gap-[10px]">
+                <div className="flex-1  flex flex-row justify-center mb-[10px] gap-[10px] flex-wrap">
                   <div className="w-[50px] min-h-[20px] bg-white  rounded-full text-center mt-[10px] border-2 border-blue-primary">
                     <h1>Php</h1>
                   </div>
@@ -363,7 +363,7 @@ function Mainfile() {
                 </div>
               </div>
               <div className="flex-1 mt-[10px] text-center">
-                <div className="flex-1  flex flex-row justify-center mb-[10px] gap-[10px]">
+                <div className="flex-1  flex flex-row justify-center mb-[10px] gap-[10px] flex-wrap">
                   <div className="w-[50px] min-h-[20px] bg-white  rounded-full text-center mt-[10px] border-2 border-blue-primary">
                     <h1>Php</h1>
                   </div>
@@ -399,7 +399,7 @@ function Mainfile() {
                 </div>
               </div>
               <div className="flex-1 mt-[10px] text-center">
-                <div className="flex-1  flex flex-row justify-center mb-[10px] gap-[10px]">
+                <div className="flex-1  flex flex-row justify-center mb-[10px] gap-[10px] flex-wrap">
                   <div className="w-[50px] min-h-[20px] bg-white  rounded-full text-center mt-[10px] border-2 border-blue-primary">
                     <h1>React</h1>
                   </div>
