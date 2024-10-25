@@ -12,9 +12,8 @@ function Invert() {
           System
         </h1>
         <p className="mt-6 text-white m-[10px]">
-          its just a little System that I made for the project of my friend, it
-          was my first freelance job that I took. This build using
-          PHP,HTML,CSS,JS and MySql for the database{" "}
+          The first complete CRUD project I made for my friend's project. The
+          second freelance I took. I used Php, MySQL, HTML and CSS{" "}
         </p>
       </div>
       <div className="flex-1  flex items-center justify-center">

@@ -13,8 +13,9 @@ import faceW from "../../public/images/facebookW.png";
 import githW from "../../public/images/githubW.png";
 import Button from "@/assets/button";
 import Swipers from "@/components/Swipers";
-import SecondMain from "@/components/SecondMain";
+
 import Image from "next/image";
+import SecondMain from "@/components/SecondMain";
 
 function Artpage() {
   return (
